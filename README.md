@@ -2,7 +2,9 @@
 
 ![](cuteCalculator.JPG)
 
-### Calculadora desenvolvida em Javascript sem utilizar o método eval() para converter as expressões,
+### Calculadora desenvolvida em Javascript sem utilizar o método eval() para converter as expressões
+
+
 
 >### Para navegar nela clique [aqui](https://akhena1.github.io/Cute-Calculator-JS/)
 
