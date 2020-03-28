@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+@keyframes pinkPigForwards {
+    0%{
+        margin-left: 0px;
+    }
+    10% {
+        margin-left: -170px;
+    }
+    25%{
+        margin-left: -170px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+@keyframes calculatorFall {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1.0;
+        margin-left: default;
+        padding: 10px;
+        width: default;
+        margin-left: default;
+    }
+    30%{
+        margin-top: -200px;
+        padding: 20px;
+    }
+    100%{
+        transform: rotate(9000deg);
+        opacity: 0.01;
+        margin-top: 1200px;
+        padding: 100px;
+        width: 1px;
+    }
+}
+@keyframes a {
+    0% {
+        top: 500px;
+        opacity: 0;
+        left: -800px;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        top: 300px;
+        opacity: 0.1;
+        left: 600px;
+    }
+}
+
+body{
+    background-color: #FEAEC9;
+}
+
+header{
+    text-align: center;
+}
+header img {
+    width: 600px;
+}
+header p {
+    margin-top: 5px;
+    color: #848484;
+    font-family: Century Gothic;
+}
+
+.pinkPig {
+    position: absolute;
+    z-index: -1;
+}
+
+.display input {
+    display: flex;
+    width: 315px;
+        height: 55px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    color: rgb(247, 84, 138);
+    
+}
+.input-one {
+    font-size: 32px!important;
+}
+.display input:nth-child(2){
+    border-bottom: 1px solid #FEAEC9;
+}
+#calculator {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    margin: auto;
+    width: 320px;
+        height: 430px;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+#calculator div:nth-child(2){
+    margin-top: 10px;
+}
+.buttons, .buttons2 {
+    margin-left: 8px;
+    font-family: Century Gothic;
+}
+#toctoc {
+    color: #6E6868;
+    font-size: 16px!important;
+    font-weight: 100;
+    font-family: Century Gothic;
+}
+button:not(.result) {
+    background-color: #FEAEC9;
+    border: none;
+    width: 62px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 22px;
+}
+.result {
+    width: 145px;
+    height: 54px;
+    border-radius: 10px;
+    padding-bottom: 8px;
+    border: none;
+    background-image: linear-gradient(147deg, #FEAEC9, #FF7B95 );
+    font-size: 40px;
+    margin-top: 5px;
+}
+button:hover {
+    background-image: linear-gradient(280deg, rgb(245, 96, 126) ,#FEAEC9 );
+}
+
+footer p {
+    text-align: end;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #848484;
+    font-family: Century Gothic;
+}
+.a {
+    position: absolute;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #848484;
+    font-family: Century Gothic;
+    font-size: 50px;
+}

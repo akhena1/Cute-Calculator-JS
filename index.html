@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuteCalculator.js</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <audio id="audio">
+        <source autoplay src="./assets/opera.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <p>don't divide by 0, I repeat:   don't divide by 0.</p>
+        <img src="./assets/img/cuteCalculatorJS.png" alt="Logotipo da cuteCalculator.js">
+    </header>
+    <main>
+        <div id="calculator">
+            <div class="display">
+                <input 
+                    class="input-one"
+                    id="result-input"
+                    type="text" 
+                    readonly/>
+                <input 
+                    id="operation-input"
+                    type="text" 
+                    readonly/>
+            </div>
+            <div class="pinkPig" id="pinkPig">
+                <img src="./assets/img/porquinhoRosa.png" alt="porquinho rosa putasso">
+            </div>
+            <div class="buttons">
+                <button id="toctoc">toc toc</button>
+                <button onclick="cancelEntry()">CE</button>
+                <button onclick="backspace()">C</button>
+                <button onclick="handleExpression('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button onclick="handleExpression(7)">7</button>
+                <button onclick="handleExpression(8)">8</button>
+                <button onclick="handleExpression(9)">9</button>
+                <button onclick="handleExpression('-')">-</button>
+            </div>
+            <div class="buttons">
+                <button onclick="handleExpression(4)">4</button>
+                <button onclick="handleExpression(5)">5</button>
+                <button onclick="handleExpression(6)">6</button>
+                <button onclick="handleExpression('*')">X</button>
+            </div>
+            <div class="buttons">
+                <button onclick="handleExpression(1)">1</button>
+                <button onclick="handleExpression(2)">2</button>
+                <button onclick="handleExpression(3)">3</button>
+                <button onclick="handleExpression('/')">/</button>
+            </div>
+            <div class="buttons2">
+                <button onclick="handleExpression(0)" >0</button>
+                <button onclick="handleExpression('.')" data=",">,</button>
+                <button onclick="showResult()" class="result">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>by: Gustavo Marcondes @2020</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
